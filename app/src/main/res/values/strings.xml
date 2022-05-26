@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Rutina</string>
+    <string name="login">로그인</string>
+    <string name="login_ment">나만의\n피부 루틴을 \n찾기 위한 기록</string>
+    <string name="email">이메일</string>
+    <string name="password">비밀번호</string>
+    <string name="id">아이디</string>
+    <string name="dot">·</string>
+    <string name="findPwd">비밀번호찾기</string>
+    <string name="signin">회원가입</string>
+    <string name="Loginbutton">LOG IN</string>
+    <string name="StringValue">이미지가 열리지 않습니다.</string>
 </resources>
