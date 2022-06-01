@@ -1,13 +1,12 @@
 <resources>
     <string name="app_name">Rutina</string>
-    <string name="login">로그인</string>
-    <string name="login_ment">나만의\n피부 루틴을 \n찾기 위한 기록</string>
-    <string name="email">이메일</string>
-    <string name="password">비밀번호</string>
-    <string name="id">아이디</string>
-    <string name="dot">·</string>
-    <string name="findPwd">비밀번호찾기</string>
-    <string name="signin">회원가입</string>
-    <string name="Loginbutton">LOG IN</string>
-    <string name="StringValue">이미지가 열리지 않습니다.</string>
+    <string name="some_id">오늘 사용하신 화장품을 기록해주세요 :)</string>
+    <string name="bodyText">당신의 몸 상태를 저에게 알려주세요 :)</string>
+    <string name="newCosmetic">새로운 화장품 등록하기</string>
+    <string name="menses">생리</string>
+    <string name="drink">오늘이나, 어제 음주를 하신 적이 있나요?</string>
+    <string name="makeup">오늘 피부 화장을 하셨나요?</string>
+    <string name="sleep">오늘의 수면을 기록해주세요 :)</string>
+    <string name="sleep_rocommand">성인기준 수면 권장시간은 6-9시간이에요!</string>
+    <string name="skin_state">피부 상태를 기록해주세요 :)</string>
 </resources>

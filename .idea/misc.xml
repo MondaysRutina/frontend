@@ -3,11 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/frontend/app/src/main/res/layout/activity_daily_care.xml" value="0.30842391304347827" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/add.xml" value="0.1935" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/check.xml" value="0.1925" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/drink_png.xml" value="0.225" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/menses_button.xml" value="0.224" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/next.xml" value="0.1925" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_1.xml" value="0.1925" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_2.xml" value="0.224" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_3.xml" value="0.1935" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_4.xml" value="0.225" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_5.xml" value="0.1935" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/vector.xml" value="0.1935" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/vector_142.xml" value="0.1925" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/vertical_line.xml" value="0.1915" />
+        <entry key="..\:/frontend/app/src/main/res/layout/activity_daily_care.xml" value="0.25" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_daily_care2.xml" value="0.30842391304347827" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_test.xml" value="0.30842391304347827" />
+        <entry key="..\:/frontend/app/src/main/res/layout/daily_care.xml" value="0.33" />
         <entry key="..\:/frontend/app/src/main/res/layout/slide_item_container.xml" value="0.35833333333333334" />
+        <entry key="..\:/frontend/app/src/main/res/layout/test.xml" value="0.184375" />
       </map>
     </option>
   </component>
