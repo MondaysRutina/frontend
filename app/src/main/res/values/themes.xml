@@ -34,7 +34,7 @@
     <style name="sleep_id">
 
         <item name="android:textSize">
-            7sp
+            9sp
         </item>
 
         <item name="android:letterSpacing">
