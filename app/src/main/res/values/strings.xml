@@ -7,6 +7,8 @@
     <string name="drink">오늘이나, 어제 음주를 하신 적이 있나요?</string>
     <string name="makeup">오늘 피부 화장을 하셨나요?</string>
     <string name="sleep">오늘의 수면을 기록해주세요 :)</string>
-    <string name="sleep_rocommand">성인기준 수면 권장시간은 6-9시간이에요!</string>
+    <string name="sleep_rocommand">성인기준 수면 권장시간은 6 - 9시간이에요!</string>
     <string name="skin_state">피부 상태를 기록해주세요 :)</string>
+    <string name="yes">Y</string>
+    <string name="no">N</string>
 </resources>
