@@ -20,6 +20,8 @@
         <entry key="..\:/frontend/app/src/main/res/drawable/vertical_line.xml" value="0.1915" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_daily_care.xml" value="0.25" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_daily_care2.xml" value="0.30842391304347827" />
+        <entry key="..\:/frontend/app/src/main/res/layout/activity_join.xml" value="0.21822916666666667" />
+        <entry key="..\:/frontend/app/src/main/res/layout/activity_login.xml" value="0.3640625" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_test.xml" value="0.30842391304347827" />
         <entry key="..\:/frontend/app/src/main/res/layout/daily_care.xml" value="0.251500600240096" />
@@ -28,6 +30,7 @@
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
