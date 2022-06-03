@@ -3,6 +3,14 @@ plugins {
 }
 
 android {
+    task wrapper(type: Wrapper) {
+        gradleVersion = '7.0'
+    }
+
+    task prepareKotlinBuildScriptModel {
+
+    }
+
     compileSdk 32
 
     defaultConfig {
