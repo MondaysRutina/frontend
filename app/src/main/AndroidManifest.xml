@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rutina">
         <activity
-            android:name=".test.test"
+            android:name=".test.LoginActivity"
             android:exported="false" />
     </application>
 
