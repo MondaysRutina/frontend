@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Join extends AppCompatActivity {
-    private EditText Join_Email, Password, EmailAddress, Name, Year, Month, Day;
+    private EditText EmailAddress;
     ImageView back;
 
     @Override
