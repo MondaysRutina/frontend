@@ -35,10 +35,6 @@
         <activity android:name=".daily.SliderItems"
             android:exported="false"/>
 
-        <activity android:name=".daily.test"
-            android:exported="true" >
-
-        </activity>
     </application>
 
 </manifest>
