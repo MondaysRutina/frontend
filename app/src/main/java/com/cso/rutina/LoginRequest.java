@@ -9,7 +9,7 @@ import java.util.Map;
 
 public class LoginRequest extends StringRequest {
     // 서버 URL 설정 ( PHP 파일 연동 )
-    final static private String URL = "http://52.78.222.77:8080/login.php";
+    final static private String URL = "http://52.78.222.77/login.php";
     private Map<String, String> parameters;
 
     public LoginRequest(String id, String pwd, Response.Listener<String> listener) {
