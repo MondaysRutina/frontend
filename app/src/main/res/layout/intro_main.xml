@@ -49,14 +49,12 @@
         />
 
     <Button
-        android:id="@+id/start_btn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@drawable/rounded_corner_rectangle"
         android:onClick="Btn1Click"
         android:text="눌러서 바로 시작하기"
-        android:backgroundTint="@color/rutina"
         android:textAllCaps="false"
         android:textStyle="bold" />
 
