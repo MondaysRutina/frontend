@@ -1,30 +1,46 @@
 package com.cso.rutina;
-
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.view.MenuItem;
+import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView tv_id, tv_pass;
+    HomeFragment homeFragment;
+    CosmeFragment cosmeFragment;
+    SettingFragment settingFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        tv_id = findViewById(R.id.tv_id);
-        tv_pass = findViewById(R.id.tv_pass);
+        homeFragment = new HomeFragment();
+        cosmeFragment = new CosmeFragment();
+        settingFragment = new SettingFragment();
 
+        getSupportFragmentManager().beginTransaction().replace(R.id.containers, homeFragment).commit();
 
-        Intent intent = getIntent();
-        String id = intent.getStringExtra("id");
-        String pwd = intent.getStringExtra("pwd");
+        NavigationBarView navigationBarView = findViewById(R.id.bottom_navigationview);
+        navigationBarView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
-        tv_id.setText(id);
-        tv_pass.setText(pwd);
-
+                switch(item.getItemId()){
+                    case R.id.home:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containers, homeFragment).commit();
+                        return true;
+                    case R.id.setting:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containers, settingFragment).commit();
+                        return true;
+                    case R.id.info:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.containers, cosmeFragment).commit();
+                        return true;
+                }
+                return false;
+            }
+        });
     }
+
 }
