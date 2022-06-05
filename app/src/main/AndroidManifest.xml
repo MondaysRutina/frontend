@@ -5,7 +5,8 @@
         android:name="android.hardware.camera2"
         android:required="true" /> <!-- 카메라 권한 사용 -->
     <uses-permission android:name="android.permission.CAMERA" /> <!-- 카메라 저장소 권한 허용 -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 인터넷 연결 퍼미션 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /><!-- 인터넷 연결 퍼미션 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -19,14 +20,13 @@
         <activity
             android:name=".Register"
             android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
-        <!--
-        meta-data
-            android:name="com.google.android.actions"
-            android:resource="@xml/vector_142" /
-        -->
+
+        <!-- 데일리 파트 -->
+
         <activity
             android:name=".daily.DailyCare"
             android:exported="true" >
@@ -35,21 +35,39 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
         <activity
             android:name=".daily.SliderItems"
             android:exported="false" />
+
+        <!-- 특정 폴더 공유하는데 사용함.-->
+<!--        <provider-->
+<!--            android:authorities="${applicationID}"-->
+<!--            android:name="androidx.core.content.FileProvider"-->
+<!--            android:exported="false"-->
+<!--            android:grantUriPermissions="true">-->
+
+<!--            <meta-data-->
+<!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+<!--                android:resource="@xml/external" />-->
+<!--        </provider>-->
+
         <activity
             android:name=".Join"
             android:exported="true" />
+
         <activity
             android:name=".Login"
             android:exported="true">
 
         </activity>
+
         <activity
             android:name=".Join_Select1"
             android:exported="true" />
+
     </application>
 
 </manifest>
