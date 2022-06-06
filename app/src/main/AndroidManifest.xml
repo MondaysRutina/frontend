@@ -19,6 +19,24 @@
         android:theme="@style/Theme.Rutina"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Add_Cream"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Lotion"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Skin"
+            android:exported="false" />
+        <activity
+            android:name=".Calender"
+            android:exported="true" />
+        <activity
+            android:name=".Add_Rutine"
+            android:exported="true" />
+        <activity
+            android:name=".Join_Select2"
+            android:exported="true" />
+        <activity
             android:name=".Register"
             android:exported="true" />
         <activity

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Join_Select2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/join1_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/join_select"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/join1_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/join_select_explain"
+            android:textColor="#000000"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroup"
+                android:layout_width="352dp"
+                android:layout_height="478dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35sp"
+                android:layout_weight="1">
+
+                <!-- Chips can be declared here, or added dynamically. -->
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_1"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="증상없음"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_2"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="아토피"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_3"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="여드름(트러블)"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_4"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="민감성"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_5"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="기미"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_6"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:checked="false"
+                    android:text="주근깨"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_7"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="주름"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_8"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:checked="false"
+                    android:text="탄력"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_9"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10sp"
+                    android:checked="false"
+                    android:text="잡티(트러블 흔적)"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chip_10"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:checked="false"
+                    android:text="건조"
+                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                    app:checkedIconVisible="true" />
+
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Next_Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="#2EE788"
+            android:text="@string/next"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

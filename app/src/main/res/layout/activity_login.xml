@@ -25,6 +25,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@null"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:srcCompat="?attr/actionModeCloseDrawable" />
                 <TextView
                 android:id="@+id/login_title"
                 android:layout_width="wrap_content"
@@ -35,8 +43,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:textColor="#000000"
-                android:textSize="18sp"
-                app:drawableStartCompat="?attr/actionModeCloseDrawable"/>
+                android:textSize="18sp"/>
             </LinearLayout>
 
             <TextView
@@ -125,6 +132,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
                 android:layout_marginEnd="16dp"
+                android:paddingStart="162dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:text="@string/signin" />
