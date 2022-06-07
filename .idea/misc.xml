@@ -9,12 +9,18 @@
         <entry key="..\:/frontend/app/src/main/res/drawable/ic_launcher_background.xml" value="0.365" />
         <entry key="..\:/frontend/app/src/main/res/drawable/menses_button.xml" value="0.224" />
         <entry key="..\:/frontend/app/src/main/res/drawable/next.xml" value="0.1925" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/normal_button.xml" value="0.255" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/radio_select.xml" value="0.1715" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/radio_unselect.xml" value="0.256" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_1.xml" value="0.1925" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_2.xml" value="0.224" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_3.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_4.xml" value="0.225" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_5.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_6.xml" value="0.1935" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/select_button.xml" value="0.255" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/selector_radio_button.xml" value="0.1715" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/unselect_button.xml" value="0.255" />
         <entry key="..\:/frontend/app/src/main/res/drawable/vector.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/vector_142.xml" value="0.1925" />
         <entry key="..\:/frontend/app/src/main/res/drawable/vertical_line.xml" value="0.1915" />
