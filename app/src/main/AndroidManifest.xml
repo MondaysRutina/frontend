@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+
     <!-- 카메라가 있어야 함을 명시 -->
     <uses-feature
         android:name="android.hardware.camera2"
@@ -17,17 +19,11 @@
         android:theme="@style/Theme.Rutina"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".Monthly_Activity"
-            android:exported="false" />
-        <activity
-            android:name=".CalendarActivity"
-            android:exported="false" />
-        <activity
             android:name=".Register"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <!--
         meta-data
             android:name="com.google.android.actions"
@@ -44,20 +40,23 @@
             android:exported="true" />
         <activity
             android:name=".Login"
-            android:exported="true" />
-        <activity
-            android:name=".Join_Select1"
-            android:exported="true" />
-        <activity
-            android:name=".IntroActivity"
-            android:exported="true" />
-        <activity
-            android:name=".TitleActivity"
-            android:exported="true"
-            android:theme="@style/SplashTheme">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Join_Select1"
+            android:exported="true" />
+
+        <activity
+            android:name=".TitleActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

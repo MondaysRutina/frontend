@@ -3,7 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-<<<<<<< HEAD
         <entry key="..\:/frontend-main/app/src/main/res/drawable/vector_142.xml" value="0.1545" />
         <entry key="..\:/frontend-main/app/src/main/res/layout/activity.xml" value="0.3494791666666667" />
         <entry key="..\:/frontend-main/app/src/main/res/layout/activity_calendar.xml" value="0.22" />
@@ -18,13 +17,10 @@
         <entry key="..\:/frontend-main/app/src/main/res/layout/intro_main.xml" value="0.33" />
         <entry key="..\:/frontend-main/app/src/main/res/menu/menu_bottom.xml" value="0.3494791666666667" />
         <entry key="..\:/frontend-main/app/src/main/res/menu/navi_menu.xml" value="0.3494791666666667" />
-=======
-        <entry key="..\:/Users/USER/Documents/frontend-main/app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
-        <entry key="..\:/Users/USER/Documents/frontend-main/app/src/main/res/layout/fragment_home.xml" value="0.3494791666666667" />
->>>>>>> 8e6de77236f9346d4f2380c34647e055eb6c9135
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
