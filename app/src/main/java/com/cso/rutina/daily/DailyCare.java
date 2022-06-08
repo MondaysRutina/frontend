@@ -21,7 +21,9 @@ import android.util.Log;
 //import android.widget.ScrollView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -81,11 +83,19 @@ public class DailyCare extends AppCompatActivity {
     private final ArrayList<String> chipChoice = new ArrayList<String>();
 
     // 화장품들 리스트 선언
-    List<Map<String, String>> routineItemList;
-    String[] cosemtic_text;
-    String[] cosmetic_routine;
+//    List<Map<String, String>> routineItemList;
+//    List<Map<String, String>> cosmeticItemList;
+    // 리스트 뷰 선언
+//    ListView routine_list = findViewById(R.id.routine_list);
+//    SingerAdapter adapter = new SingerAdapter();
+
     private static final String ROUTINE_TAG_TEXT = "text";
     private static final String COSMETIC_TAG_TEXT = "text";
+
+    List<Map<String, Object>> ItemList;
+
+    String[] cosmetic_text = {"크림","썸바이미레드티트리시카소사이드더마솔루션크림"};
+    String[] cosmetic_routine = {"수분루틴", "여드름 루틴", "밤샘 루틴", "진정 루틴"};
 
     // 서버에 보낼 변수들 선언
     private static String id;
@@ -202,12 +212,12 @@ public class DailyCare extends AppCompatActivity {
             }
         });
 
-        // 루틴
+        // 루틴 - 맞게 수정 필요
         routine_select_btn.setOnClickListener(new View.OnClickListener() {
             String routine_name, routine_cosmetic_type, routine_cosmetic_name, routine_cosmetic_brand;
             @Override
             public void onClick(View view) {
-//                showAlertRoutineDialog();
+                showAlertRoutineDialog();
                 Response.Listener<String> responseListener = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -251,15 +261,18 @@ public class DailyCare extends AppCompatActivity {
         });
 
         // 루틴
-        routineItemList = new ArrayList<>();
+//        routineItemList = new ArrayList<>();
+//        cosmeticItemList = new ArrayList<>();
+        ItemList = new ArrayList<>();
 
-        for(int i = 0; i < cosemtic_text.length; i++){
-            Map<String, String> itemMap = new HashMap<>();
+        for(int i = 0; i < 4; i++){
+            Map<String, Object> itemMap = new HashMap<>();
             itemMap.put(ROUTINE_TAG_TEXT, cosmetic_routine[i]);
-            itemMap.put(COSMETIC_TAG_TEXT, cosemtic_text[i]);
+            //itemMap.put(COSMETIC_TAG_TEXT, cosmetic_text[i]);
 
-            routineItemList.add(itemMap);
+            ItemList.add(itemMap);
         }
+
 
         Log.i("DATE", "Date Format finish");
 
@@ -403,7 +416,7 @@ public class DailyCare extends AppCompatActivity {
                 front_image_path = String.valueOf(centerFile);
                 left_image_path = String.valueOf(leftFile);
                 right_image_path = String.valueOf(rightFile);
-                daily_routine_name = "수분루틴";
+                //daily_routine_name = String.valueOf(routine);
                 daily_stress = sliderValue;
                 daily_menstruation = menses;
                 daily_drink = yes_no;
@@ -466,6 +479,43 @@ public class DailyCare extends AppCompatActivity {
         });
     }
 
+//    abstract class SingerAdapter extends BaseAdapter{
+//        // 데이터가 들어가 있지 않고, 어떻게 담을지만 정의해뒀다.
+//        ArrayList<SingleItem> items = new ArrayList<SingleItem>();
+//
+//        public int getCount(){
+//            return items.size();
+//        }
+//
+//        public void additem(SingleItem item){
+//            items.add(item);
+//        }
+//
+//        public Object getItem(int position){
+//            return items.get(position);
+//        }
+//
+//        public long getitemID(int position){
+//            return position;
+//        }
+//
+//        // 어뎁터가 데이터를 관리하고 뷰도 만듬
+//        public View getView(int position, View convertView, ViewGroup parent){
+//            SingerItemView singerItemView = null;
+//            // 코드를 재사용할 수 있도록
+//            if(convertView == null){
+//                singerItemView = new SingerItemView(getApplicationContext());
+//            } else {
+//                singerItemView = (SingerItemView) convertView;
+//             }
+//
+//            SingleItem item = items.get(position);
+//            singerItemView.setRoutine(item.getRoutine());
+//            singerItemView.setCosmetics(item.getCosmetic());
+//            return singerItemView;
+//        }
+//    }
+
     // 루틴
     private void showAlertRoutineDialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(DailyCare.this);
@@ -476,7 +526,10 @@ public class DailyCare extends AppCompatActivity {
         final ListView listView = (ListView) view.findViewById(R.id.routine_list);
         final AlertDialog dialog = builder.create();
 
-        SimpleAdapter simpleAdapter = new SimpleAdapter(DailyCare.this, routineItemList, R.layout.list_routine, new String[]{ROUTINE_TAG_TEXT, COSMETIC_TAG_TEXT}, new int[]{R.id.routine_name, R.id.cosmetics});
+        SimpleAdapter simpleAdapter = new SimpleAdapter(DailyCare.this, ItemList, R.layout.list_routine, new String[]{ROUTINE_TAG_TEXT,COSMETIC_TAG_TEXT}, new int[]{R.id.routine_name, R.id.cosmetics});
+
+        //SimpleAdapter simpleAdapter = new SimpleAdapter(DailyCare.this, routineItemList, R.layout.list_routine, new String[]{ROUTINE_TAG_TEXT, COSMETIC_TAG_TEXT}, new int[]{R.id.routine_name, R.id.cosmetics});
+
 
         listView.setAdapter(simpleAdapter);
         listView.setOnItemClickListener(new OnItemClickListener(){
@@ -485,6 +538,8 @@ public class DailyCare extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id){
                 routine.setText("오늘의 루틴 : " + cosmetic_routine[position]);
                 dialog.dismiss();
+                daily_routine_name = String.valueOf(cosmetic_routine[position]);
+
             }
         });
 
