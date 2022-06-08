@@ -56,7 +56,11 @@ public class HomeFragment extends Fragment {
     }
 
     private String random() {
+<<<<<<< HEAD
         String[] str = {"오늘의 날씨가 좋아요", "강아지는 멍멍", "고양이는 야옹야옹", "소는 우우", "병아리는 삐약삐약"};
+=======
+        String[] str = {"고양이는 귀엽다.", "졸업 시켜주세요 ^^", "졸업은 곧 행복길", "멍멍아 야옹해봐", "강아지는 멍멍"};
+>>>>>>> 8e6de77236f9346d4f2380c34647e055eb6c9135
         Random random = new Random();
         int randomNum = random.nextInt(5);
         return str[randomNum];
