@@ -29,7 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="나의 피부기록을 확인하려면 버튼을 눌러주세요."
+        android:text="당신의 피부 기록을 확인해보세요 !"
+        android:textStyle="bold"
         android:textSize="20dp" />
 
     <CalendarView

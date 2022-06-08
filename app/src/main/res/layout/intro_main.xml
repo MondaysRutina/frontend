@@ -10,13 +10,14 @@
 
     <ImageView
         android:layout_width="284dp"
-        android:layout_height="263dp"
+        android:layout_height="264dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="47dp"
+        android:layout_marginLeft="60dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="40dp"
         android:id="@+id/imageView2"
-        app:srcCompat="@drawable/logo" />
+        android:src="@drawable/logo"
+        />
 
     <View
         android:layout_weight="0.3"
