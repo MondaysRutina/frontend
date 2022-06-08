@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 스크롤뷰 -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <!-- 안에 넣어주기 -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- 년/월/일 텍스트 -->
+            <TextView
+                android:id="@+id/today_date"
+                android:layout_width="287dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- 선 -->
+            <View
+                android:id="@+id/line_top"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/vector_142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/today_date" />
+
+            <!-- ViewPager2 추가 함.-->
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPagerImageSlider"
+                android:layout_width="match_parent"
+                android:layout_height="220sp"
+                android:paddingStart="80sp"
+                android:paddingEnd="80sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/line_top" />
+
+            <!-- 선 -->
+
+
+            <!-- 사용한 화장품 텍스트 -->
+
+            <View
+                android:id="@+id/line_middle"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/vector_142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPagerImageSlider" />
+
+            <TextView
+                android:id="@+id/useCosmeticText"
+                android:layout_width="190sp"
+                android:layout_height="19sp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/some_id"
+                android:textAppearance="@style/some_id"
+                android:translationY="-0.91sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_middle" />
+
+            <!-- 사용한 화장품 루틴 선택 -->
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/useCosmeticText">
+
+
+                <View
+                    android:id="@+id/rectangle_6"
+                    android:layout_width="352dp"
+                    android:layout_height="68dp"
+                    android:background="@drawable/rectangle_2"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="30sp"/>
+
+                <ImageButton
+                    android:layout_width="9sp"
+                    android:layout_height="12sp"
+                    android:background="@drawable/next"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="40sp"
+                    android:layout_marginTop="28sp"/>
+
+                <TextView
+                    android:layout_width="220sp"
+                    android:layout_height="33sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80sp"
+                    android:layout_marginRight="40sp"/>
+
+                <TextView
+                    android:id="@+id/detail"
+                    android:layout_width="54dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="300sp"
+                    android:layout_marginBottom="10sp"
+                    android:background="@drawable/rectangle_1"
+                    android:gravity="center"
+                    android:text="상세 정보"
+                    android:textColor="@color/black"
+                    android:textSize="9sp" />
+
+            </FrameLayout>
+
+            <!-- 몸상태 텍스트 -->
+
+            <!-- 스트레스 박스-->
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="192dp"
+                android:background="@drawable/vector_142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/viewPagerImageSlider" />
+
+            <TextView
+                android:id="@+id/bodyText"
+                android:layout_width="200sp"
+                android:layout_height="19sp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="116dp"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/bodyText"
+                android:textAppearance="@style/some_id"
+                android:translationY="-0.91sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+            <FrameLayout
+                android:id="@+id/FrameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:layout_marginTop="19dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bodyText">
+
+                <View
+                    android:id="@+id/rectangle_2"
+                    android:layout_width="352dp"
+                    android:layout_height="140dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/rectangle_2"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="50sp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10sp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="스트레스"
+                    android:textAppearance="@style/some_id"
+                    android:translationY="-0.91sp"/>
+
+                <!-- Discrete slider -->
+                <com.google.android.material.slider.Slider
+                android:id="@+id/slider"
+                android:layout_width="302sp"
+                android:layout_height="wrap_content"
+                android:value="50.0"
+                android:valueFrom="0.0"
+                android:valueTo="100.0"
+                android:stepSize="25.0"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                    />
+
+                <TextView
+                    android:id="@+id/terrible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="심각"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="45sp"/>
+
+                <TextView
+                    android:id="@+id/high"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="높음"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="115sp"/>
+
+                <TextView
+                    android:id="@+id/normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="보통"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="180sp"/>
+
+                <TextView
+                    android:id="@+id/less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="낮음"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="250sp"/>
+
+                <TextView
+                    android:id="@+id/very_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="낮음"
+                    android:textSize="10sp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="10sp"
+                    android:layout_marginLeft="315sp"/>
+
+
+            </FrameLayout>
+
+            <!-- 생리 -->
+            <FrameLayout
+                android:id="@+id/frameLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="107dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FrameLayout2">
+
+                <View
+                    android:id="@+id/rectangle_4"
+                    android:layout_width="352dp"
+                    android:layout_height="99dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_2" />
+
+                <TextView
+                    android:id="@+id/menses"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10sp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/menses"
+                    android:textAppearance="@style/some_id"
+                    android:translationY="-0.91sp" />
+
+                <Button
+                    android:id="@+id/menses_before"
+                    android:layout_width="58sp"
+                    android:layout_height="50.54sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="80sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="전"
+                    android:textColor="@color/menses_color"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/menses_start"
+                    android:layout_width="58sp"
+                    android:layout_height="50.54sp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="시작"
+                    android:textColor="@color/menses_color"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/menses_end"
+                    android:layout_width="58sp"
+                    android:layout_height="50.54sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="80sp"
+                    android:layout_marginTop="10sp"
+                    android:backgroundTint="#FFFFFF"
+                    android:text="안함"
+                    android:textColor="@color/menses_color"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <!-- 음주 -->
+            <FrameLayout
+                android:id="@+id/frameLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+                <View
+                    android:id="@+id/drink"
+                    android:layout_width="333dp"
+                    android:layout_height="62dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_4" />
+
+                <TextView
+                    android:id="@+id/drinl_text"
+                    android:layout_width="200sp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginRight="45sp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/drink"
+                    android:textAppearance="@style/some_id"
+                    android:translationY="-0.91sp" />
+
+                <Button
+                    android:id="@+id/yes"
+                    android:layout_width="40sp"
+                    android:layout_height="35sp"
+                    android:text="@string/yes"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70sp"
+                    android:backgroundTint="#D3D3D3"
+                    android:textColor="@color/black"
+                    />
+
+                <Button
+                    android:id="@+id/no"
+                    android:layout_width="40sp"
+                    android:layout_height="35sp"
+                    android:text="@string/no"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120sp"
+                    android:backgroundTint="#D3D3D3"
+                    android:textColor="@color/black"
+                    />
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/frameLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="79dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout3">
+
+                <View
+                    android:id="@+id/makeup"
+                    android:layout_width="333dp"
+                    android:layout_height="62dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_4" />
+
+                <TextView
+                    android:id="@+id/makeup_text"
+                    android:layout_width="200sp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2sp"
+                    android:layout_marginRight="45sp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/makeup"
+                    android:textAppearance="@style/some_id"
+                    android:translationY="-0.91sp" />
+
+                <Button
+                    android:id="@+id/yes2"
+                    android:layout_width="40sp"
+                    android:layout_height="35sp"
+                    android:text="@string/yes"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="70sp"
+                    android:backgroundTint="#D3D3D3"
+                    android:textColor="@color/black"
+                    />
+
+                <Button
+                    android:id="@+id/no2"
+                    android:layout_width="40sp"
+                    android:layout_height="35sp"
+                    android:text="@string/no"
+                    android:textSize="10sp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="120sp"
+                    android:backgroundTint="#D3D3D3"
+                    android:textColor="@color/black"
+                    />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/sleep"
+                android:layout_width="200dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="96dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="96dp"
+                android:gravity="center"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/sleep"
+                android:textAppearance="@style/some_id"
+                android:translationY="-0.91sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout4" />
+
+            <Button
+                android:id="@+id/sleep_less"
+                android:layout_width="58sp"
+                android:layout_height="50.54sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="적음"
+                android:textColor="@color/menses_color"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sleep" />
+
+            <Button
+                android:id="@+id/sleep_normal"
+                android:layout_width="58sp"
+                android:layout_height="50.54sp"
+                android:layout_gravity="center"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="38dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="보통"
+                android:textColor="@color/menses_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/sleep_many"
+                app:layout_constraintHorizontal_bias="0.4"
+                app:layout_constraintStart_toEndOf="@+id/sleep_less"
+                app:layout_constraintTop_toBottomOf="@+id/sleep" />
+
+            <Button
+                android:id="@+id/sleep_many"
+                android:layout_width="58sp"
+                android:layout_height="50.54sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="86dp"
+                android:backgroundTint="#FFFFFF"
+                android:text="많음"
+                android:textColor="@color/menses_color"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sleep" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="14sp"
+                android:layout_height="9sp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/check"
+                app:layout_constraintEnd_toStartOf="@+id/sleep_recommand"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sleep_less" />
+
+            <TextView
+                android:id="@+id/sleep_recommand"
+                android:layout_width="160dp"
+                android:layout_height="14dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="134dp"
+                android:text="@string/sleep_rocommand"
+                android:textAppearance="@style/sleep_id"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/sleep_normal" />
+
+            <View
+                android:id="@+id/line_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="19dp"
+                android:background="@drawable/vector_142"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sleep_recommand" />
+
+            <TextView
+                android:id="@+id/skin_state"
+                android:layout_width="132dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="130dp"
+                android:gravity="center_horizontal|top"
+                android:lineSpacingExtra="2sp"
+                android:text="@string/skin_state"
+                android:textAppearance="@style/some_id"
+                android:translationY="-0.91sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/line_bottom" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skin_state">
+
+                <View
+                    android:id="@+id/skin_state_box"
+                    android:layout_width="352dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rectangle_6" />
+
+                <TextView
+                    android:id="@+id/skin_state_2"
+                    android:layout_width="70dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10sp"
+                    android:lineSpacingExtra="2sp"
+                    android:text="피부 상태"
+                    android:textAppearance="@style/some_id" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipGroup"
+                    android:layout_width="352dp"
+                    android:layout_height="250sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="35sp">
+
+                    <!-- Chips can be declared here, or added dynamically. -->
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_1"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="증상없음"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_2"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="예민함"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_3"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="건조함"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_4"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="각질"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_5"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="유분기"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_6"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:checked="false"
+                        android:text="가려움"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_7"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="홍조"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_8"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:checked="false"
+                        android:text="모낭염"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_9"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="알러지"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_10"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:checked="false"
+                        android:text="트러블"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_11"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="좁쌀"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_12"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:checked="false"
+                        android:text="화농성"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_13"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:checked="false"
+                        android:text="따가움"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip_14"
+                        style="@style/Widget.MaterialComponents.Chip.Choice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20sp"
+                        android:checked="false"
+                        android:text="열오름"
+                        app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
+                        app:checkedIconVisible="true" />
+
+                </com.google.android.material.chip.ChipGroup>
+
+
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/memo"
+                android:layout_width="352dp"
+                android:layout_height="296dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                android:ems="10"
+                android:hint="memo"
+                android:gravity="top"
+                android:background="#F0F0F0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/frameLayout5" />
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="90sp"
+                android:layout_height="49sp"
+                android:layout_marginStart="165dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="166dp"
+                android:backgroundTint="#1DA0FF"
+                android:text="저장"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/memo" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
