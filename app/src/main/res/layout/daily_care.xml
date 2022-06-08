@@ -195,48 +195,29 @@
             <FrameLayout
                 android:id="@+id/frameLayout"
                 android:layout_width="match_parent"
-                android:layout_height="135dp"
+                android:layout_height="80dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/useCosmeticText">
 
-
-                <View
-                    android:id="@+id/rectangle_6"
-                    android:layout_width="352dp"
-                    android:layout_height="68dp"
-                    android:background="@drawable/rectangle_2"
+                <TextView
+                    android:layout_width="200sp"
+                    android:layout_height="38sp"
+                    android:id="@+id/routine"
                     android:layout_gravity="center"
-                    android:layout_marginBottom="30sp"/>
+                    android:layout_marginRight="70sp"/>
 
-                <ImageButton
-                    android:layout_width="9sp"
-                    android:layout_height="12sp"
-                    android:background="@drawable/next"
-                    android:layout_gravity="right"
-                    android:layout_marginRight="40sp"
-                    android:layout_marginTop="28sp"/>
-
-                <TextView
-                    android:layout_width="220sp"
-                    android:layout_height="33sp"
-                    android:layout_gravity="center_horizontal"
-                    android:layout_marginTop="80sp"
-                    android:layout_marginRight="40sp"/>
-
-                <TextView
-                    android:id="@+id/detail"
-                    android:layout_width="54dp"
-                    android:layout_height="25dp"
-                    android:layout_gravity="bottom"
-                    android:layout_marginLeft="300sp"
-                    android:layout_marginBottom="10sp"
-                    android:background="@drawable/rectangle_1"
-                    android:gravity="center"
-                    android:text="상세 정보"
+                <android.widget.Button
+                    android:id="@+id/routine_select_btn"
+                    android:layout_width="100sp"
+                    android:layout_height="38sp"
+                    android:text="+"
+                    android:textSize="20sp"
                     android:textColor="@color/black"
-                    android:textSize="9sp" />
+                    android:background="@drawable/routine_button"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="100sp"/>
 
             </FrameLayout>
 
