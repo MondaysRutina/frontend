@@ -38,6 +38,9 @@ public class Login extends AppCompatActivity {
     private EditText EmailAddress, Password; // 잘못 선언되어 있어 수정함. -민수
     private Button Login;
 
+    // 회원정보가 필요해서 전역 변수 선언함.
+    public static String id_login;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,9 @@ public class Login extends AppCompatActivity {
         // 로그인 버튼 클릭 - 영주
         EmailAddress = (EditText) findViewById(R.id.EmailAddress);
         Password = (EditText) findViewById(R.id.Password);
+
+        // 이메일 값 전역변수로 저장
+        id_login = EmailAddress.getText().toString();
 
         Login = (Button) findViewById(R.id.Loginbutton);
 
