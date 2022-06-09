@@ -35,7 +35,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class Login extends AppCompatActivity {
     //Button login;
     TextView sign;
-    private EditText EmailAddress, Password; // 잘못 선언되어 있어 수정함.
+    private EditText EmailAddress, Password; // 잘못 선언되어 있어 수정함. -민수
     private Button Login;
 
     @Override

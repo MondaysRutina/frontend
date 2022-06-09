@@ -43,4 +43,6 @@
     <string name="skin_state">피부 상태를 기록해주세요 :)</string>
     <string name="yes">Y</string>
     <string name="no">N</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
