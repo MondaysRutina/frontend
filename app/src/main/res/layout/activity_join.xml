@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:privateImeOptions="defaultInputmode=korean"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Join">
@@ -129,6 +131,26 @@
                     android:inputType="textPersonName" />
 
                 <TextView
+                    android:id="@+id/Nickname_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:text="@string/nick_name"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/Nickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:padding="10dp"
+                    android:background="@drawable/box_id"
+                    android:ems="10"
+                    android:inputType="textPersonName" />
+
+                <TextView
                     android:id="@+id/Birth_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -142,72 +164,81 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <EditText
-                        android:id="@+id/Year"
-                        android:inputType="number"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginRight="30dp"
-                        android:background="@drawable/box_id"
-                        android:ems="10"
-                        android:hint="@string/year"
-                        android:padding="10dp" />
-
                     <TextView
-                        android:id="@+id/Year_text"
+                        android:id="@+id/ymBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="13dp"
-                        android:text="@string/year"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
+                        android:layout_marginLeft="15dp"
+                        android:text="생년월일을 알려주세요."
+                        android:textSize="15dp"
+                        android:onClick="onClick"/>
 
-                    <EditText
-                        android:id="@+id/Month"
-                        android:inputType="number"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:background="@drawable/box_id"
-                        android:ems="10"
-                        android:hint="@string/month"
-                        android:padding="10dp" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/Year"-->
+<!--                        android:inputType="number"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:layout_marginEnd="0dp"-->
+<!--                        android:layout_marginRight="30dp"-->
+<!--                        android:background="@drawable/box_id"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="나이"-->
+<!--                        android:padding="10dp" />-->
 
-                    <TextView
-                        android:id="@+id/Month_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="13dp"
-                        android:text="@string/month"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/Year_text"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="13dp"-->
+<!--                        android:text="@string/year"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
 
-                    <EditText
-                        android:id="@+id/Day"
-                        android:inputType="number"
-                        android:layout_width="match_parent"
-                        android:layout_weight="1"
-                        android:layout_height="48dp"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginEnd="0dp"
-                        android:padding="10dp"
-                        android:background="@drawable/box_id"
-                        android:ems="10"
-                        android:hint="@string/day" />
+<!--                    <EditText-->
+<!--                        android:id="@+id/Month"-->
+<!--                        android:inputType="number"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:layout_marginEnd="0dp"-->
+<!--                        android:background="@drawable/box_id"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="@string/month"-->
+<!--                        android:padding="10dp" />-->
 
-                    <TextView
-                        android:id="@+id/Day_text"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="13dp"
-                        android:text="@string/day"
-                        android:textColor="#000000"
-                        android:textSize="18sp" />
+<!--                    <TextView-->
+<!--                        android:id="@+id/Month_text"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="13dp"-->
+<!--                        android:text="@string/month"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/Day"-->
+<!--                        android:inputType="number"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_marginTop="0dp"-->
+<!--                        android:layout_marginEnd="0dp"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:background="@drawable/box_id"-->
+<!--                        android:ems="10"-->
+<!--                        android:hint="@string/day" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/Day_text"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="13dp"-->
+<!--                        android:text="@string/day"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textSize="18sp" />-->
 
             </LinearLayout>
                 <TextView
@@ -228,22 +259,22 @@
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
-                <RadioButton
-                    android:id="@+id/Gender_M"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:text="@string/man"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
-                <RadioButton
-                    android:id="@+id/Gender_W"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
-                    android:text="@string/woman"
-                    android:textColor="#000000"
-                    android:textSize="18sp" />
+                    <RadioButton
+                        android:id="@+id/Gender_M"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/man"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+                    <RadioButton
+                        android:id="@+id/Gender_W"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="13dp"
+                        android:text="@string/woman"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
                 </RadioGroup>
 
 
@@ -287,7 +318,8 @@
                     android:layout_marginEnd="0dp"
                     android:padding="10dp"
                     android:background="@drawable/box_id"
-                    android:ems="10"/>
+                    android:ems="10"
+                    android:textSize="18sp"/>
 
                 <Button
                     android:id="@+id/JoinButton"
@@ -296,7 +328,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="0dp"
                     android:backgroundTint="#2EE788"
-                    android:text="@string/signin"
+                    android:text="@string/next"
                     app:cornerRadius="5dp" />
 
             </LinearLayout>

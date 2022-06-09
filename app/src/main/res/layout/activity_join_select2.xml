@@ -22,7 +22,7 @@
             android:orientation="horizontal" />
 
         <TextView
-            android:id="@+id/join1_title"
+            android:id="@+id/join2_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -31,7 +31,7 @@
             android:textSize="18sp" />
 
         <TextView
-            android:id="@+id/join1_explain"
+            android:id="@+id/join2_explain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
@@ -43,132 +43,101 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <com.google.android.material.chip.ChipGroup
-                android:id="@+id/chipGroup"
-                android:layout_width="352dp"
-                android:layout_height="478dp"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="35sp"
-                android:layout_weight="1">
+            <LinearLayout
+                android:id="@+id/CheckBox_Group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp">
 
-                <!-- Chips can be declared here, or added dynamically. -->
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_1"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="증상없음"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="증상없음" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_2"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="아토피"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="아토피"/>
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_3"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="여드름(트러블)"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="여드름(트러블)"/>
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_4"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/CheckBox_Group2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/ck3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="민감성"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="민감성"/>
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_5"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="기미"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="기미" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_6"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:checked="false"
-                    android:text="주근깨"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="주근깨" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_7"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="주름"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="주름"/>
+            </LinearLayout>
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_8"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/ck7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:checked="false"
-                    android:text="탄력"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="탄력" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_9"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:checked="false"
-                    android:text="잡티(트러블 흔적)"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="잡티(트러블 흔적)" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip_10"
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                <CheckBox
+                    android:id="@+id/ck9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20sp"
-                    android:checked="false"
-                    android:text="건조"
-                    app:checkedIcon="@drawable/ic_mtrl_chip_checked_circle"
-                    app:checkedIconVisible="true" />
+                    android:layout_marginEnd="10dp"
+                    android:text="건조"/>
+            </LinearLayout>
 
-            </com.google.android.material.chip.ChipGroup>
-        </LinearLayout>
+            </LinearLayout>
 
         <Button
             android:id="@+id/Next_Button"
@@ -177,9 +146,8 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="0dp"
             android:backgroundTint="#2EE788"
-            android:text="@string/next"
+            android:text="완료"
             app:cornerRadius="5dp" />
     </LinearLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

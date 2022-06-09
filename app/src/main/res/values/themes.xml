@@ -19,4 +19,13 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="Theme.Rutina.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Rutina.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Rutina.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

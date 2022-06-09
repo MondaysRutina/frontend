@@ -49,6 +49,7 @@
         android:orientation="horizontal">
 
       <Button
+          android:id="@+id/dry"
           android:layout_width="170dp"
           android:layout_height="240dp"
           android:layout_gravity="center"
@@ -87,6 +88,7 @@
           android:text="@string/dontknow"
           android:textColor="@color/black" />
     </LinearLayout>
+
     <Button
         android:id="@+id/Next_Button"
         android:layout_width="match_parent"

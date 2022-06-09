@@ -1,14 +1,13 @@
 package com.cso.rutina;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-public class Join_Select2 extends AppCompatActivity {
+public class ItemListActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_join_select2);
+        setContentView(R.layout.item_list);
     }
 }

@@ -38,6 +38,8 @@
     <string name="join_select">피부 고민을 선택해주세요</string>
     <string name="join_select_explain">피부타입을 통해\n사용자의 피부 데이터를 분석합니다</string>
     <string name="next">다음</string>
+    <string name="nick_name">닉네임</string>
+    <string name="save">저장</string>
 
     <!-- 화장대 -->
     <string name="skin">스킨</string>

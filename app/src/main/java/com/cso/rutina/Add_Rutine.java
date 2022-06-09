@@ -1,8 +1,8 @@
 package com.cso.rutina;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Add_Rutine extends AppCompatActivity {
 
