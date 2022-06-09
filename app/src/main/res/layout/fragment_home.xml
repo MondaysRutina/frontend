@@ -41,7 +41,8 @@
             android:text="로그인 정보 화면"
             android:textSize="25dp"
             android:textColor="@color/teal_700"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:font = "@font/noto_bold"/>
 
     </LinearLayout>
 
@@ -53,16 +54,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginBottom="20dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:font = "@font/noto_regular"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="당신의 피부 기록을 확인해보세요 !"
+        android:text="나의 피부 기록 (ง˙∇˙)ว"
         android:textStyle="bold"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:font = "@font/noto_bold"/>
 
     <CalendarView
         android:layout_width="match_parent"
@@ -76,14 +79,14 @@
         android:layout_marginTop="8dp"
         />
 
-        <Button
-            android:id="@+id/Btn2"
-            android:layout_width="298dp"
-            android:layout_height="50dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/rounded_corner_rectangle"
-            android:text="일기작성"
-            android:textAllCaps="false" />
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_corner_rectangle"
+        android:text="일기작성"
+        android:textAllCaps="false" />
 
-    </LinearLayout>
+</LinearLayout>
