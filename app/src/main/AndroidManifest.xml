@@ -17,6 +17,16 @@
         android:theme="@style/Theme.Rutina"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".Load_Cosmetic"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".Picker"
             android:exported="false" />
         <!-- <activity -->
@@ -59,11 +69,16 @@
         <activity
             android:name=".Login"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".Powder_Room"
+            android:exported="true">
+
         </activity>
         <activity
             android:name=".Join_Select1"
