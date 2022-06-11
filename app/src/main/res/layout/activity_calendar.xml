@@ -27,23 +27,21 @@
     <TextView
         android:id="@+id/memo_tv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="100dp"
         android:layout_weight="1"
-        android:text="2022/"
-        />
+        android:font="@font/noto_bold"
+        android:gravity="center"
+        android:text="2022/06/09\n 메모: 술을 적당히 먹어야 겠다. \n 태그 선택: 여드름,지성\n 음주여부 : x "
+        android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:visibility="invisible"
-        app:layout_constraintBottom_toBottomOf="@+id/contextEditText"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/contextEditText"
-        app:layout_constraintTop_toTopOf="@+id/contextEditText" />
+    <Button
+        android:id="@+id/Btn2"
+        android:layout_width="298dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner_rectangle"
+        android:font="@font/noto_regular"
+        android:text="상세 내용 확인"
+        android:textAllCaps="false" />
 
 </LinearLayout>

@@ -1,13 +1,28 @@
 package com.cso.rutina;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CalendarView;
+import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.Random;
 
 
 public class HomeFragment extends Fragment {
+
+    TextView random, name;
+    CalendarView calendar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -15,6 +30,7 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home, container, false);
     }
+
     @SuppressLint("SetTextI18n")
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
@@ -40,7 +56,7 @@ public class HomeFragment extends Fragment {
     }
 
     private String random() {
-        String[] str = {"오늘의 날씨가 좋아요", "강아지는 멍멍", "고양이는 야옹야옹", "소는 우우", "병아리는 삐약삐약"};
+        String[] str = {"유통기한이 다 되어가는 화장품이 있어요!", "[공지]서버 점검으로 인한 저장 지연", "오늘의 날씨는 화창해요!", "올영세일 오늘이 마지막 !", "먹지마세요 피부에 양보하세요"};
         Random random = new Random();
         int randomNum = random.nextInt(5);
         return str[randomNum];
