@@ -1,5 +1,6 @@
 <resources>
     <!-- 현지 파트 -->
+    <!-- 로그인 -->
     <string name="app_name">Rutina</string>
     <string name="login">로그인</string>
     <string name="login_ment">나만의\n피부 루틴을 \n찾기 위한 기록</string>
@@ -29,7 +30,25 @@
     <string name="gender">성별</string>
     <string name="man">남</string>
     <string name="woman">여</string>
+    <string name="pwd_hint_select">비밀번호 힌트 선택</string>
     <string name="pwd_hint">비밀번호 힌트</string>
+    <string name="prompt_question">선택</string>
+
+    <!-- 회원가입 -->
+    <string name="join_select">피부 고민을 선택해주세요</string>
+    <string name="join_select_explain">피부타입을 통해\n사용자의 피부 데이터를 분석합니다</string>
+    <string name="next">다음</string>
+    <string name="nick_name">닉네임</string>
+    <string name="save">저장</string>
+
+    <!-- 화장대 -->
+    <string name="skin">스킨</string>
+    <string name="lotion">로션</string>
+    <string name="cream">크림</string>
+    <string name="add_rutine">루틴을 등록해 주세요:)</string>
+    <string name="add_skin">스킨을 화장대에 등록해 주세요:)</string>
+    <string name="add_lotion">로션을 화장대에 등록해 주세요:)</string>
+    <string name="add_cream">로션을 화장대에 등록해 주세요:)</string>
 
     <!-- 영주 파트 -->
     <string name="some_id">오늘 사용하신 화장품을 기록해주세요 :)</string>

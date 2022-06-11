@@ -1,45 +1,27 @@
 package com.cso.rutina;
 
-import static android.content.ContentValues.TAG;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
-import com.cso.rutina.daily.DailyCare;
-import com.google.android.material.textfield.TextInputEditText;
 
-import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.List;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
-
 public class Login extends AppCompatActivity {
-    //Button login;
+    Button Login;
     TextView sign;
-    private EditText EmailAddress, Password; // 잘못 선언되어 있어 수정함. -민수
-    private Button Login;
-
-    // 회원정보가 필요해서 전역 변수 선언함.
-    public static String id_login;
+    ImageView back;
+    private EditText EmailAddress, Password; // 잘못 선언되어 있어 수정함.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,9 +34,6 @@ public class Login extends AppCompatActivity {
         // 로그인 버튼 클릭 - 영주
         EmailAddress = (EditText) findViewById(R.id.EmailAddress);
         Password = (EditText) findViewById(R.id.Password);
-
-        // 이메일 값 전역변수로 저장
-        id_login = EmailAddress.getText().toString();
 
         Login = (Button) findViewById(R.id.Loginbutton);
 
@@ -76,12 +55,12 @@ public class Login extends AppCompatActivity {
 
                                 String id = jsonResponse.getString("id");
                                 String pwd = jsonResponse.getString("pwd");
-                                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                                //Intent intent = new Intent(getApplicationContext(), Powder_Room.class);
 
                                 // 로그인 화면서 사용자 정보 넘기기
-                                intent.putExtra("id", id);
-                                intent.putExtra("pwd", pwd);
-                                startActivity(intent);
+                                //intent.putExtra("id", id);
+                                //intent.putExtra("pwd", pwd);
+                                //startActivity(intent);
                             } else {
                                 Toast.makeText(getApplicationContext(), "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show();
                                 return;
@@ -99,17 +78,13 @@ public class Login extends AppCompatActivity {
         });
 
 
+        // back 버튼 클릭시, 메인 페이지로 이동
+        back = findViewById(R.id.back);
 
-
-
-
-
-        // 로그인 버튼 클릭시, 메인 페이지로 이동
-        // test 용으로 join_select1페이지로 이동동
-        //login.setOnClickListener(v -> {
-        //    Intent intent = new Intent(this, Join_Select1.class);
-        //    startActivity(intent);
-        //});
+        back.setOnClickListener(v -> {
+            Intent intent = new Intent(this, TitleActivity.class);
+            startActivity(intent);
+        });
 
 
        //회원가입 버튼
@@ -117,7 +92,7 @@ public class Login extends AppCompatActivity {
 
         //회원가입 버튼 클릭시, 회원가입 페이지로 이동
         sign.setOnClickListener(v -> {
-            Intent intent = new Intent(this, Register.class);
+            Intent intent = new Intent(this, Join.class);
             startActivity(intent);
         });
     }
