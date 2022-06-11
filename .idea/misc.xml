@@ -6,12 +6,9 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable-v24/ic_home.xml" value="0.131" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable-v24/ic_info.xml" value="0.131" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable-v24/ic_settings.xml" value="0.131" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable/rectangle_2.xml" value="0.133" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable/rectangle_3.xml" value="0.133" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable/rounded_corner_rectangle.xml" value="0.301" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable/some_id.xml" value="0.2635" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable/vector_142.xml" value="0.301" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/drawable/vertical_line.xml" value="0.133" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/activity.xml" value="0.2" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/activity_join.xml" value="0.3494791666666667" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/activity_login.xml" value="0.3494791666666667" />
@@ -21,22 +18,30 @@
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/daily_care.xml" value="0.3494791666666667" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/first_activity.xml" value="0.33" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/fragment_cosme.xml" value="0.1" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/fragment_home.xml" value="0.24479166666666666" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
-        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/intro_main.xml" value="0.25" />
+        <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/layout/intro_main.xml" value="0.1" />
         <entry key="..\:/Users/USER/AndroidStudioProjects/frontend/app/src/main/res/menu/menu_bottom.xml" value="0.15" />
         <entry key="..\:/frontend/app/src/main/res/drawable/add.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/check.xml" value="0.1925" />
         <entry key="..\:/frontend/app/src/main/res/drawable/drink_png.xml" value="0.225" />
         <entry key="..\:/frontend/app/src/main/res/drawable/ic_launcher_background.xml" value="0.365" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/list_routine.xml" value="0.2185" />
         <entry key="..\:/frontend/app/src/main/res/drawable/menses_button.xml" value="0.224" />
         <entry key="..\:/frontend/app/src/main/res/drawable/next.xml" value="0.1925" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/normal_button.xml" value="0.255" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/radio_select.xml" value="0.1715" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/radio_unselect.xml" value="0.256" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_1.xml" value="0.1925" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_2.xml" value="0.224" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_3.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_4.xml" value="0.225" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_5.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/rectangle_6.xml" value="0.1935" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/routine_button.xml" value="0.1855" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/select_button.xml" value="0.255" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/selector_radio_button.xml" value="0.1715" />
+        <entry key="..\:/frontend/app/src/main/res/drawable/unselect_button.xml" value="0.255" />
         <entry key="..\:/frontend/app/src/main/res/drawable/vector.xml" value="0.1935" />
         <entry key="..\:/frontend/app/src/main/res/drawable/vector_142.xml" value="0.1925" />
         <entry key="..\:/frontend/app/src/main/res/drawable/vertical_line.xml" value="0.1915" />
@@ -47,7 +52,9 @@
         <entry key="..\:/frontend/app/src/main/res/layout/activity_main.xml" value="0.18541666666666667" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/frontend/app/src/main/res/layout/activity_test.xml" value="0.30842391304347827" />
-        <entry key="..\:/frontend/app/src/main/res/layout/daily_care.xml" value="0.251500600240096" />
+        <entry key="..\:/frontend/app/src/main/res/layout/alert_routine.xml" value="0.3640625" />
+        <entry key="..\:/frontend/app/src/main/res/layout/daily_care.xml" value="0.25" />
+        <entry key="..\:/frontend/app/src/main/res/layout/list_routine.xml" value="0.17857142857142858" />
         <entry key="..\:/frontend/app/src/main/res/layout/slide_item_container.xml" value="0.35833333333333334" />
         <entry key="..\:/frontend/app/src/main/res/layout/test.xml" value="0.184375" />
       </map>
