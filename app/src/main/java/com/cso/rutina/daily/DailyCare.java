@@ -37,6 +37,7 @@ import android.widget.Toast;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.cso.rutina.HomeFragment;
 import com.cso.rutina.Login;
 import com.cso.rutina.LoginRequest;
 import com.cso.rutina.MainActivity;
@@ -244,7 +245,7 @@ public class DailyCare extends AppCompatActivity {
 
                                 startActivity(intent);
                             } else {
-                                Toast.makeText(getApplicationContext(), "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "루틴 불러오기에 실패했습니다.", Toast.LENGTH_SHORT).show();
                                 return;
                             }
                         } catch (Exception e){
@@ -410,8 +411,8 @@ public class DailyCare extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 // JSON 값 보내기
-                id = "hi";
-                //id = id_login;
+                //id = "hi";
+                id = id_login;
                 daily_report_date = date.toString();
                 front_image_path = String.valueOf(centerFile);
                 left_image_path = String.valueOf(leftFile);
@@ -456,9 +457,9 @@ public class DailyCare extends AppCompatActivity {
                                 Toast.makeText(getApplicationContext(), "데일리 케어 저장이 완료되었습니다.", Toast.LENGTH_SHORT).show();
 
 
-//                                Intent intent = new Intent(DailyCare.this, MainActivity.class);
-//                                startActivity(intent);
-//                                finish();
+                                Intent intent = new Intent(DailyCare.this, HomeFragment.class);
+                                startActivity(intent);
+                                finish();
 
                             } else {
                                 Log.d("Daily Care", "저장 실패");

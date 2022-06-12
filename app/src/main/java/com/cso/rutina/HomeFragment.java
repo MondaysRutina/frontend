@@ -12,8 +12,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
+
+import com.cso.rutina.daily.DailyCare;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -23,6 +26,7 @@ public class HomeFragment extends Fragment {
 
     TextView random, name;
     CalendarView calendar;
+    Button Btn2;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -39,6 +43,7 @@ public class HomeFragment extends Fragment {
         random = view.findViewById(R.id.random_tv);
         name = view.findViewById(R.id.name_tv);
         calendar = view.findViewById(R.id.calendarView);
+        Btn2 = view.findViewById(R.id.Btn2);
 
         random.setText(random());
         if(requireActivity().getIntent().hasExtra("id")){
@@ -51,6 +56,15 @@ public class HomeFragment extends Fragment {
                 calendar.set(i, i1, i2);
                 Long eventOccursOn = calendar.getTimeInMillis();
                 moveToCalendar(eventOccursOn);
+            }
+        });
+
+        Btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), DailyCare.class); //fragment라서 activity intent와는 다른 방식
+                intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
             }
         });
     }
