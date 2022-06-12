@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         navigationView.setNavigationItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.monthly_reporter:
-                    String name = getIntent().getStringExtra("name");
+                    String name = getIntent().getStringExtra("id");
                     moveToReporter(name);
                     break;
 

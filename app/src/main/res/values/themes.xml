@@ -50,4 +50,6 @@
         <item name="windowActionBar">false</item>
     </style>
 
+    <style name="Theme.NavigationDrawer" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
 </resources>

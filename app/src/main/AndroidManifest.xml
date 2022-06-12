@@ -32,11 +32,6 @@
         <activity
             android:name=".daily.DailyCare"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
         </activity>
 
@@ -56,6 +51,27 @@
         <activity
             android:name=".Join_Select1"
             android:exported="true" />
+
+        <activity
+            android:name=".Monthly_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".IntroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".TitleActivity"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 
