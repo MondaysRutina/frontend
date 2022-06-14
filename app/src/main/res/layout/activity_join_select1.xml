@@ -59,6 +59,7 @@
           android:textColor="@color/black" />
 
       <Button
+          android:id="@+id/Complexity"
           android:layout_width="170dp"
           android:layout_height="239dp"
           android:backgroundTint="#FFFFFF"
@@ -74,6 +75,7 @@
         android:orientation="horizontal">
 
       <Button
+          android:id="@+id/oily"
           android:layout_width="170dp"
           android:layout_height="239dp"
           android:layout_marginEnd="30dp"
@@ -82,6 +84,7 @@
           android:textColor="@color/black" />
 
       <Button
+          android:id="@+id/unknown"
           android:layout_width="170dp"
           android:layout_height="239dp"
           android:backgroundTint="#FFFFFF"

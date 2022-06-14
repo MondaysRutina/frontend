@@ -12,6 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.RequestQueue;
@@ -36,15 +37,16 @@ public class Join extends AppCompatActivity {
     private static String id, pwd, name, nickname, question_answer;
     //private static int age;
 
+
     // 생년월일 버튼 클릭 시
-    public void onClick(View v){
-        switch(v.getId()){
-            case R.id.ymBtn:
-                Intent picker = new Intent(getApplicationContext(),Picker.class);
-                startActivityForResult(picker,1000);
-                break;
-        }
-    }
+//    public void onClick(@NonNull View v){
+//        switch(v.getId()){
+//            case R.id.ymBtn:
+//                Intent picker = new Intent(getApplicationContext(),Picker.class);
+//                startActivityForResult(picker,1000);
+//                break;
+//        }
+//    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,13 +56,25 @@ public class Join extends AppCompatActivity {
         // 로그인 화면 처리를 위한 back
         ImageView back;
         back = findViewById(R.id.back);
+        ymBtn = findViewById(R.id.ymBtn);
+
+        ymBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent picker = new Intent(getApplicationContext(),Picker.class);
+                //startActivity(picker);
+                startActivityForResult(picker,1000);
+            }
+        });
 
         //뒤로가기 버튼 클릭시, 로그인 페이지로 이동
         back.setOnClickListener(v -> {
             Intent intent = new Intent(this, Login.class);
             startActivity(intent);
         });
-        
+
+
+
         // 비밀번호 힌트 선택 스피너에 데이터 출력
 
         // xml에서 지정
