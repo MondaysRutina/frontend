@@ -15,7 +15,7 @@ public class Join_Select1 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join_select1);
 
-        buttonEvent = (Button) findViewById(R.id.dry);
+//        buttonEvent = (Button) findViewById(R.id.dry);
 //        buttonEvent.setOnTouchListener(new View.OnTouchListener() {
 //                                           @Override
 //                                           public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -29,7 +29,7 @@ public class Join_Select1 extends AppCompatActivity {
 //                                           }
 //                                       });
 
-        //
+
         Button Next_Button;
         Next_Button = findViewById(R.id.Next_Button);
 

@@ -48,6 +48,19 @@
 
         </activity>
 
+        <!--   화장대    -->
+        <activity
+            android:name=".Add_Rutine"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Load_Cosmetic"
+            android:exported="true"/>
+
+        <activity
+            android:name=".Join_Select2"
+            android:exported="true" />
+
         <activity
             android:name=".Join_Select1"
             android:exported="true" />

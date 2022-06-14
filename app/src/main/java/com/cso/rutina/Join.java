@@ -133,7 +133,7 @@ public class Join extends AppCompatActivity {
                             boolean success = jsonResponse.getBoolean("success");
 
                             if (success) { //회원가입이 가능하다면
-                                Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(getApplicationContext(), "회원가입이 완료되었습니다.", Toast.LENGTH_SHORT).show();
 
                                 Intent intent = new Intent(Join.this, Join_Select1.class);
                                 startActivity(intent);
