@@ -132,9 +132,9 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="end"
                 android:layout_marginEnd="16dp"
-                android:paddingStart="162dp"
                 android:clickable="true"
                 android:focusable="true"
+                android:paddingStart="150dp"
                 android:text="@string/signin" />
 
         </LinearLayout>

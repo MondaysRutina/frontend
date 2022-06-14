@@ -115,7 +115,7 @@ public class DailyCare extends AppCompatActivity {
     private static String daily_skin_condition1;
     private static String daily_skin_condition2;
     private static String daily_skin_condition3;
-
+    private Login login;
     // 추가 값
     private int menses, yes_no, yes_no2, sleep;
 
@@ -410,9 +410,12 @@ public class DailyCare extends AppCompatActivity {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //login = (Login) getApplicationContext();
                 // JSON 값 보내기
                 //id = "hi";
+                //Intent idIntent = getIntent();
                 id = id_login;
+                        //idIntent.getStringExtra("id_login");
                 daily_report_date = date.toString();
                 front_image_path = String.valueOf(centerFile);
                 left_image_path = String.valueOf(leftFile);

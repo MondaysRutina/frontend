@@ -21,7 +21,7 @@ public class IntroActivity extends AppCompatActivity {
             startActivity(new Intent(this, Login.class));
         });
         register_btn.setOnClickListener(view -> {
-            startActivity(new Intent(this, Register.class));
+            startActivity(new Intent(this, Join.class));
         });
     }
 }

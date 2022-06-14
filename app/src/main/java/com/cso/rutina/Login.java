@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.cso.rutina.daily.DailyCare;
 
 import org.json.JSONObject;
 
@@ -39,8 +40,7 @@ public class Login extends AppCompatActivity {
 
         Login = (Button) findViewById(R.id.Loginbutton);
 
-        // 이메일 값 전역변수로 저장
-        id_login = EmailAddress.getText().toString();
+
 
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +66,13 @@ public class Login extends AppCompatActivity {
                                 intent.putExtra("id", id);
                                 intent.putExtra("pwd", pwd);
                                 startActivity(intent);
+
+                                // 이메일 값 전역변수로 저장
+                                id_login = EmailAddress.getText().toString();
+                                //Intent idIntent = new Intent(getApplicationContext(), DailyCare.class);
+                                //idIntent.putExtra("id_login", id_login);
+                                //startActivity(idIntent);
+
                             } else {
                                 Toast.makeText(getApplicationContext(), "로그인에 실패했습니다.", Toast.LENGTH_SHORT).show();
                                 return;
